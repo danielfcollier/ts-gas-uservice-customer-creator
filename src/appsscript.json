@@ -1,0 +1,14 @@
+{
+  "timeZone": "Etc/GMT",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "DbSheets",
+        "version": "2",
+        "libraryId": "13rzxngZvz-NzYQ0IDhAc-lThmAa_mkO-MaghUiix1kHXe875LG6gOZyF"
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}
