@@ -1,9 +1,9 @@
 import TypeMoq from "typemoq";
 
-import schemaValidator from "./schemaValidator";
+import createFolderStructure from "./createFolderStructure";
 
 test("basic test", () => {
-  const mock = TypeMoq.Mock.ofInstance(schemaValidator);
+  const mock = TypeMoq.Mock.ofInstance(createFolderStructure);
   mock
     .setup((f) => f(1))
     .returns(() => {
