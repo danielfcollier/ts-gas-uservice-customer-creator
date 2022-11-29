@@ -4,7 +4,7 @@
   "description": "[uService] Customer Creator",
   "type": "module",
   "scripts": {
-    "build": "webpack --mode=production --define-process-env-node-env=production && node gasBundler.cjs",
+    "build": "webpack --mode=production --define-process-env-node-env=production && node gasBundler.cjs && clasp push",
     "test": "jest",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --define-process-env-node-env=production",
