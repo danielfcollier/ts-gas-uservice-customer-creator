@@ -10,9 +10,6 @@
     "build:prod": "webpack --mode=production --define-process-env-node-env=production",
     "watch": "webpack --watch"
   },
-  "jest": {
-    "verbose": true
-  },
   "author": "Daniel Collier",
   "license": "MIT",
   "devDependencies": {
