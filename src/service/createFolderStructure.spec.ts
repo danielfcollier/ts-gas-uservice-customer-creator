@@ -1,4 +1,4 @@
-import TypeMoq from "typemoq";
+import * as TypeMoq from "typemoq";
 
 import createFolderStructure from "./createFolderStructure";
 
