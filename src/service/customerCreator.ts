@@ -3,7 +3,8 @@ import createFolderStructure from "./createFolderStructure";
 import config from "../config";
 
 function customerCreator(dbConnection) {
-  const data = dbConnection.ReadAll();
+  // @ts-ignore
+  const data = DbSheets.ReadAll(dbConnection.queue);
 
   data.forEach((element) => {
     const customer = schemaParse(element);
@@ -15,13 +16,13 @@ function customerCreator(dbConnection) {
 
     const { id } = customer;
     // @ts-ignore
-    const { deletedAt } = DbSheets.Delete(dbConnection, id);
+    const { deletedAt } = DbSheets.Delete(dbConnection.queue, id);
     if (!deletedAt) {
       throw new Error();
     }
 
     // @ts-ignore
-    const { createdAt } = DbSheets.Create(dbConnection, customer);
+    const { createdAt } = DbSheets.Create(dbConnection.data, customer);
     if (!createdAt) {
       throw new Error();
     }
