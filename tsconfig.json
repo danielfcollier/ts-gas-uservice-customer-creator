@@ -10,5 +10,4 @@
     "esModuleInterop": true,
     "moduleResolution": "node"
   }
-  // "files": ["src/app.ts"]
 }

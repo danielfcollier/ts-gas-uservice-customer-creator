@@ -7,8 +7,8 @@ const isProduction = process.env.NODE_ENV == "production";
 const config = {
   target: "node",
   entry: {
-    service: "./src/app.ts",
-    trigger: "./src/main.ts",
+    service: "./src/service.ts",
+    trigger: "./src/trigger.ts",
     webhook: "./src/controller/doPost.ts",
   },
   output: {
