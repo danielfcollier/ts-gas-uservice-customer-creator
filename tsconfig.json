@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    // "noImplicitAny": true,
     "lib": ["es2019"],
     "target": "es2019",
+    "outDir": "./dist/",
+    "allowJs": true,
     "experimentalDecorators": true,
     "esModuleInterop": true,
-    "moduleResolution":"node"
+    "moduleResolution": "node"
   }
+  // "files": ["src/app.ts"]
 }
